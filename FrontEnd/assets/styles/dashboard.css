@@ -1,0 +1,50 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+#homePage{
+   /* border: 1px solid red;*/
+    height: 100vh;
+    background: url("../images/background-Home.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.navbar-brand{
+    font-family: 'Lemonada', cursive;
+  /*  border:1px solid red;*/
+    color: white;
+}
+.navbar-brand:hover{
+    color: #E8432B;
+}
+.navbar-brand>img {
+    width: 100px;
+    height: 80px;
+    margin-left: 22px;
+    /* margin-top: -10px;*/
+    border: 1px solid green;
+}
+#navbarNav .navbar-nav .nav-item .nav-link{
+    color: white;
+    font-size: 15px;
+    font-family: 'Lemonada', cursive;
+    /*border: 1px solid red;*/
+}
+#navbarNav .navbar-nav .nav-item .nav-link:hover{
+    color: #E8432B;
+}
+#navbarNav .navbar-nav .nav-item #homeText{
+    margin-left: 285px;
+    margin-top: -30px;
+}
+#navbarNav .navbar-nav .nav-item #aboutText{
+    margin-top: -30px;
+    margin-left: 20px;
+}
+#navbarNav .navbar-nav .nav-item #serviceText{
+    margin-top: -30px;
+    margin-left: 32px;
+}
+#navbarNav .navbar-nav .nav-item #fleetText{
+    margin-top: -30px;
+    margin-left: 32px;
+}

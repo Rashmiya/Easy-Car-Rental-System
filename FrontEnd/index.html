@@ -21,12 +21,81 @@
     <!--css-->
     <link rel="stylesheet" href="assets/styles/dashboard.css">
 
+    <!--font styles-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@600&display=swap" rel="stylesheet">
 
 </head>
 <body>
 
+<section id="homePage">
+    <!--head naviagtion area-->
+    <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="logo navbar-brand" href="#">
+                <img src="assets/images/EasyCarLogo.png" alt="Car Rental System Logo" class="d-inline-block align-text-top">
+                Easy Car Rental
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" id="homeText">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="aboutText">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="serviceText">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="fleetText">Fleet</a>
+                    </li>
+                </ul>
+            </div>
 
+            <!--right side buttons-->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+            <button type="button" class="border border-danger">Register</button>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Log In
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Customer</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Admin</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Driver</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div> </div></nav>
+        </div>
+    </nav>
+</section>
+
+<!--style="color: #E74C3C; font-weight: bold"-->
 <script src="assets/bootstrap/js/bootstrap.min.js"></script> <!--import bootstrap for js-->
 <script src="assets/jQuery/jquery-3.6.0.min.js"></script> <!--import jQuery library-->
+
+
 </body>
 </html>
