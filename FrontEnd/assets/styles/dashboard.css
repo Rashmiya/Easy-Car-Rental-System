@@ -1,12 +1,9 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
-#homePage{
+#navigationAreaTop{
    /* border: 1px solid red;*/
-    height: 100vh;
-    background: url("../images/background-Home.jpg");
-    background-position: center;
-    background-size: cover;
+    height: 70px;
 }
 .navbar-brand{
     font-family: 'Lemonada', cursive;
@@ -21,11 +18,11 @@ body{
     height: 80px;
     margin-left: 22px;
     /* margin-top: -10px;*/
-    border: 1px solid green;
+  /*  border: 1px solid green;*/
 }
 #navbarNav .navbar-nav .nav-item .nav-link{
     color: white;
-    font-size: 15px;
+    font-size: 16px;
     font-family: 'Lemonada', cursive;
     /*border: 1px solid red;*/
 }
@@ -47,4 +44,65 @@ body{
 #navbarNav .navbar-nav .nav-item #fleetText{
     margin-top: -30px;
     margin-left: 32px;
+}
+
+#navigationAreaTop .nav-buttons{
+    font-family: 'Lemonada', cursive;
+    color: white;
+    background-color: transparent;
+    border: 3px solid #DA1D1D;
+    margin-top:-30px;
+    font-size: 16px;
+    width: 110px;
+}
+#navigationAreaTop .nav-buttons:hover{
+    color: #E8432B;
+}
+#navigationAreaTop #button1{
+    margin-right: 15px;
+}
+#navigationAreaTop #button2{
+ margin-right: 10px;
+}
+/*=======================*/
+#homeContainer{
+    height: 100vh;
+    background: url("../images/background-Home.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#home-content-area{
+  /*  border: 1px solid blue;*/
+    height: 550px;
+    font-family: 'Lemonada', cursive;
+    font-size: 62px;
+
+}
+#home-content-area #para1{
+    color: #E8432B;
+   /* border: 1px solid deeppink;*/
+    margin-top: 60px;
+    margin-left: 30px;
+}
+#home-content-area #para2{
+    color: #841505;
+    font-size: 32px;
+    /*border: 1px solid bisque;*/
+    padding-left: 860px;
+}
+#home-content-area .nav-buttons{
+    font-family: 'Lemonada', cursive;
+    color: white;
+    background-color: transparent;
+    border: 3px solid #DA1D1D;
+    font-size: 20px;
+    width: 220px;
+    height: 60px;
+    margin-left: 200px;
+    margin-top: 185px;
+}
+/*=====================*/
+#aboutUsContainer{
+    height: 500px;
+    background-color: #0a53be;
 }

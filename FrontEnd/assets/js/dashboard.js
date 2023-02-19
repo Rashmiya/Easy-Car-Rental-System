@@ -1,0 +1,1 @@
+$("#navigationAreaTop").css('display','none');
