@@ -130,6 +130,7 @@ body{
     position: absolute;
     margin-top: 220px;
     margin-left: 700px;
+    font-size: 18px;
 }
 #aboutUsContainer .content-area .para3area{
     /*border: 1px solid blue;*/
@@ -138,7 +139,7 @@ body{
 #aboutUsContainer .content-area .para3{
    /* border: 1px solid green;*/
     padding-top: 300px;
-    font-size: 15px;
+    font-size: 16px;
 }
 #aboutUsContainer .centralArea{
     border: 5px solid #B18F84;
@@ -164,4 +165,8 @@ body{
 #aboutUsContainer .centralArea .item1>p{
     padding-top: 10px;
     padding-left: 70px;
+}
+/*================*/
+#servicesContainer{
+    height: 100vh;
 }
