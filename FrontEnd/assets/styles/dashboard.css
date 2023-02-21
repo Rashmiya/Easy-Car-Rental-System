@@ -4,6 +4,8 @@ body{
 #navigationAreaTop{
    /* border: 1px solid red;*/
     height: 70px;
+    /*background-color: #FCF3EA;*/
+    z-index: 2;
 }
 .navbar-brand{
     font-family: 'Lemonada', cursive;
@@ -66,6 +68,7 @@ body{
 }
 /*=======================*/
 #homeContainer{
+   /* border: 1px solid blue;*/
     height: 100vh;
     background: url("../images/background-Home.jpg");
     background-position: center;
@@ -103,13 +106,18 @@ body{
 }
 /*=====================*/
 #aboutUsContainer{
-    /*border: 1px solid red;*/
-    height: 950px;
+   /* border: 1px solid red;*/
+    height: 160vh;
     background: rgb(54,59,60);
     background: linear-gradient(180deg, rgba(54,59,60,1) 0%, rgba(84,94,96,1) 1%, rgba(193,179,179,1) 13%, rgba(208,201,199,1) 23%, rgba(232,235,242,1) 65%, rgba(252,243,234,1) 100%);
 }
 #aboutUsContainer .carvideo{
- /*border: 1px solid red;*/
+/* border: 1px solid red;*/
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    margin-top: -200px;
+    margin-left: 10px;
 
 }
 #aboutUsContainer .image-area{
@@ -146,8 +154,8 @@ body{
     border-radius: 20px;
     height: 150px;
     width: 600px;
-    margin-top: 70px;
-    margin-left: 550px;
+    margin-top: 90px;
+    margin-left: 650px;
     display: flex;
 }
 #aboutUsContainer .centralArea .item1{
@@ -166,7 +174,35 @@ body{
     padding-top: 10px;
     padding-left: 70px;
 }
+#rmbutton{
+    font-family: 'Poppins', sans-serif;
+    margin-left: 655px;
+    margin-top: 40px;
+}
 /*================*/
 #servicesContainer{
+   /* border: 1px solid blue;*/
     height: 100vh;
+    background: rgb(252,243,234);
+    background: linear-gradient(180deg, rgba(252,243,234,1) 8%, rgba(252,243,234,1) 20%, rgba(250,240,229,1) 30%, rgba(231,233,238,1) 54%, rgba(229,230,236,1) 78%, rgba(229,230,236,1) 100%);
+}
+#servicesContainer>hr{
+    position: absolute;
+    width: 100%;
+    margin-left: -12px;
+}
+#servicesContainer .para1{
+       /* border:1px solid red;*/
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 100px;
+    font-size: 33px;
+    font-weight: bold;
+}
+#servicesContainer .para2{
+    /* border: 1px solid blue;*/
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 100px;
+    font-size: 18px;
 }
