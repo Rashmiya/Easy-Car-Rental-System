@@ -181,28 +181,7 @@ body{
 }
 /*================*/
 #servicesContainer{
-   /* border: 1px solid blue;*/
-    height: 100vh;
+    height: 150vh;
     background: rgb(252,243,234);
     background: linear-gradient(180deg, rgba(252,243,234,1) 8%, rgba(252,243,234,1) 20%, rgba(250,240,229,1) 30%, rgba(231,233,238,1) 54%, rgba(229,230,236,1) 78%, rgba(229,230,236,1) 100%);
-}
-#servicesContainer>hr{
-    position: absolute;
-    width: 100%;
-    margin-left: -12px;
-}
-#servicesContainer .para1{
-       /* border:1px solid red;*/
-    position: absolute;
-    margin-top: 60px;
-    margin-left: 100px;
-    font-size: 33px;
-    font-weight: bold;
-}
-#servicesContainer .para2{
-    /* border: 1px solid blue;*/
-    position: absolute;
-    margin-top: 120px;
-    margin-left: 100px;
-    font-size: 18px;
 }
