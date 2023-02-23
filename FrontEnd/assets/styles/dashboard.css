@@ -186,7 +186,7 @@ body{
 }
 /*================*/
 #servicesContainer{
-    height: 150vh;
+    height: 140vh;
     background: rgb(252,243,234);
     background: linear-gradient(180deg, rgba(252,243,234,1) 8%, rgba(252,243,234,1) 20%, rgba(250,240,229,1) 30%, rgba(231,233,238,1) 54%, rgba(229,230,236,1) 78%, rgba(229,230,236,1) 100%);
 }
@@ -242,4 +242,34 @@ body{
 }
 .serviceButton{
     margin-top: 50px;
+}
+
+/*==========================*/
+#fleetContainer{
+/*    border: 1px solid red;*/
+    height: 200vh;
+    background: rgb(252,243,234);
+/*    background: linear-gradient(180deg, rgba(252,243,234,1) 8%, rgba(252,243,234,1) 20%, rgba(250,240,229,1) 30%, rgba(231,233,238,1) 54%, rgba(229,230,236,1) 78%, rgba(229,230,236,1) 100%);*/
+    background: linear-gradient(180deg, rgba(229,230,236,1) 10%,  rgba(229,230,236,1) 15%,   rgba(231,233,238,1) 40%, rgb(231,233,238,1) 54%, rgba(252,243,234,1) 78%, rgba(252,243,234,1) 100%);
+}
+#fleetContainer .para1{
+    position: absolute;
+  /*  margin-top: 160px;*/
+    margin-left: 700px;
+    font-size: 33px;
+    font-weight: bold;
+}
+#fleetContainer .para2{
+    position: absolute;
+    margin-top: 65px;
+    margin-left: 700px;
+    font-size: 18px;
+}
+.car-area{
+    border: 1px solid red;
+    padding-top: 160px;
+
+}
+.carPanel{
+    border:1px solid blue;
 }
