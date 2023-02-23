@@ -279,9 +279,36 @@ body{
     background-color: #cbc9c9;
 }*/
 .carPanel>img{
-    border:1px solid blue;
+   /* border:1px solid blue;*/
     width: 250px;
     height: 200px;
     padding-bottom: 30px;
     padding-top: 20px;
+}
+.text1{
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.text2{
+    padding: 10px 5px 0px 0px;
+}
+.text3{
+    padding: 10px ;
+}
+.text5{
+    padding-left: 15px;
+}
+.text6{
+    padding:10px 0px 10px 0px;
+}
+.carButton{
+    width: 140px;
+}
+.brand-name{
+    position: absolute;
+    font-size: 25px;
+    /*border: 1px solid red;*/
+    margin-top: 165px;
+    margin-left: -220px;
 }
