@@ -266,10 +266,18 @@ body{
     font-size: 18px;
 }
 .car-area{
-    border: 1px solid red;
-    padding-top: 160px;
+   /* border: 1px solid red;*/
+    padding-top: 170px;
 
 }
 .carPanel{
-    border:1px solid blue;
+    /*border: 1px solid deeppink;*/
+    width: 420px;
+}
+.carPanel>img{
+   /* border:1px solid blue;*/
+    width: 250px;
+    height: 200px;
+    padding-bottom: 30px;
+    padding-top: 20px;
 }
