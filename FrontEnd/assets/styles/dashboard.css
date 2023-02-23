@@ -186,7 +186,7 @@ body{
 }
 /*================*/
 #servicesContainer{
-    height: 140vh;
+    height: 135vh;
     background: rgb(252,243,234);
     background: linear-gradient(180deg, rgba(252,243,234,1) 8%, rgba(252,243,234,1) 20%, rgba(250,240,229,1) 30%, rgba(231,233,238,1) 54%, rgba(229,230,236,1) 78%, rgba(229,230,236,1) 100%);
 }
@@ -246,7 +246,7 @@ body{
 
 /*==========================*/
 #fleetContainer{
-/*    border: 1px solid red;*/
+   /* border: 1px solid red;*/
     height: 200vh;
     background: rgb(252,243,234);
 /*    background: linear-gradient(180deg, rgba(252,243,234,1) 8%, rgba(252,243,234,1) 20%, rgba(250,240,229,1) 30%, rgba(231,233,238,1) 54%, rgba(229,230,236,1) 78%, rgba(229,230,236,1) 100%);*/
@@ -267,15 +267,19 @@ body{
 }
 .car-area{
    /* border: 1px solid red;*/
-    padding-top: 170px;
+    padding-top: 165px;
 
 }
 .carPanel{
-    /*border: 1px solid deeppink;*/
+    border: 2px solid #B18F84;
+    border-radius: 20px;
     width: 420px;
 }
+/*.carPanel:hover{
+    background-color: #cbc9c9;
+}*/
 .carPanel>img{
-   /* border:1px solid blue;*/
+    border:1px solid blue;
     width: 250px;
     height: 200px;
     padding-bottom: 30px;
