@@ -308,7 +308,11 @@ body{
 .brand-name{
     position: absolute;
     font-size: 25px;
-    /*border: 1px solid red;*/
+   /* border: 1px solid red;*/
     margin-top: 165px;
     margin-left: -220px;
 }
+/*#fleetContainer .car-area div:nth-child(4)>div:nth-child(2)>div:nth-child(2) p{
+    font-size: 15px;
+    !*border: 1px solid blue;*!
+}*/
