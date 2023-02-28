@@ -1,5 +1,5 @@
 body{
-    height: 95vh;
+    height: 180vh;
     background: rgb(252,243,234);
     background: linear-gradient(180deg, rgba(252,243,234,1) 20%, rgba(252,243,234,1) 36%, rgba(250,240,229,1) 46%, rgba(231,233,238,1) 80%, rgba(229,230,236,1) 88%, rgba(229,230,236,1) 100%);
 }
@@ -7,8 +7,36 @@ body{
 #customerRegisterPage{
     border: 2px solid #8E8E8E;
     box-shadow: 4px 4px 3px 0px #8e8e8e;
-    width: 500px;
-    height: 90vh;
+    width: 700px;
+    height: 170vh;
     margin-top: 30px;
 
+}
+.signUpForm{
+  /*  border: 1px solid red;*/
+    margin-top: 40px;
+}
+.signUpForm>div:nth-child(1){
+   /* border: 1px solid deeppink;*/
+    margin-left: 50px;
+    width: 290px;
+}
+.signUpForm>div:nth-child(2){
+    width: 300px;
+
+  /*  margin-bottom: 100px;*/
+   /* border: 1px solid red;*/
+}
+.signUpForm>.col-12, .signUpForm> .mb-3,.signUpForm .col-md-12{
+   /* border: 1px solid green;*/
+    width: 590px;
+}
+.customerSignUpButton{
+    width: 250px;
+    margin-left: 140px;
+    margin-top: -50px;
+}
+.signUp p{
+    margin-left: 50px;
+  /*  margin-top: 30px;*/
 }
