@@ -442,7 +442,7 @@
 <!--customer login page container-->
 <main class="container-fluid" id="customerLoginPage">
             <div class="customerPanel">
-                <div class="backIcon" id="backIcon">
+                <div class="backIcon" class="backIcon">
                     <img src="assets/images/icons/back.png" alt="back Icon">
                 </div>
                 <p class="customerTopic1">Customer Panel </p>
@@ -540,7 +540,42 @@
         <p><a href="#" id="backToLogin" style="margin-left: 30px">Have an account ? Login From Here </a></p>
     </div>
 </main>
+<!--Admin login page container-->
+<main class="container-fluid" id="adminLoginPage">
+    <div class="adminPanel">
+        <div class="backIcon" class="backIcon">
+            <img src="assets/images/icons/back.png" alt="back Icon">
+        </div>
+        <p class="customerTopic1">Admin Panel </p>
+        <!--<div class="bottom"></div>-->
+        <p class="customerTopic2">Please Login or Sign in to continue</p>
+    </div>
 
+    <div class="logInForm">
+        <form class="loginForm">
+            <div class="row mb-3 col-11 col-lg-3">
+                <label class="col-sm-2 col-form-label" for="adminUserName">Username
+                    <div class="col-sm-10">
+                        <input class="form-control" name="username" id="adminUserName" type="text">
+                    </div></label>
+
+            </div>
+            <div class="row mb-3 col-11 col-lg-3">
+                <label class="col-sm-2 col-form-label" for="adminPassword">Password
+                    <div class="col-sm-10">
+                        <input class="form-control" name="password" id="adminPassword" type="password">
+                    </div></label>
+
+            </div>
+<!--            <div class="rememberpass mt-3">-->
+<!--                <input type="checkbox" name="rememberusername" id="rememberAdminUsername" value="1">-->
+<!--                <label for="rememberusername">Remember username</label>-->
+<!--            </div>-->
+            <button class="btn customerLoginBtn btn-primary" type="button">Login</button>
+            <p id="adminLoginWarningMsg"> <!--style="border: 1px solid red; width: 50px;height: 30px"--></p>
+        </form>
+    </div>
+</main>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script> <!--import bootstrap for js-->
 <script src="assets/jQuery/jquery-3.6.0.min.js"></script> <!--import jQuery library-->
 

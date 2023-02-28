@@ -69,3 +69,16 @@ body{
 .backIcon:hover{
     cursor: pointer;
 }
+
+/*==================Admin Login Styles ====================*/
+#adminLoginPage{
+    border: 2px solid #8E8E8E;
+    box-shadow: 4px 4px 3px 0px #8e8e8e;
+    width: 500px;
+    height: 90vh;
+    margin-top: 30px;
+
+}
+.adminPanel{
+    margin-top: 50px;
+}

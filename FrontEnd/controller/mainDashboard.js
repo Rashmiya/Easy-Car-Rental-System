@@ -1,21 +1,24 @@
 /*In initial level*/
-/*$("#homeContainer").css('display','block');
+$("#homeContainer").css('display','block');
 $("#aboutUsContainer").css('display','block');
 $("#servicesContainer").css('display','block');
 $("#fleetContainer").css('display','block');
 $("#contactContainer").css('display','block');
 
-$("#customerLoginPage").css('display','none');*/
+$("#customerLoginPage").css('display','none');
+$("#adminLoginPage").css('display','none');
+$("#customerRegisterPage").css('display','none');
 
 // demo
-$("#homeContainer").css('display','none');
+/*$("#homeContainer").css('display','none');
 $("#aboutUsContainer").css('display','none');
 $("#servicesContainer").css('display','none');
 $("#fleetContainer").css('display','none');
 $("#contactContainer").css('display','none');
 //own
 $("#customerLoginPage").css('display','none');
-$("#customerRegisterPage").css('display','block');
+$("#customerRegisterPage").css('display','none');
+$("#adminLoginPage").css('display','block');*/
 
 /*when click login button in HomePage*/
 $("#button2").on('click',function (){
@@ -28,7 +31,7 @@ $("#button2").on('click',function (){
     $("#customerLoginPage").css('display','block');
 });
 /*when click back icon in Customer SignIn page*/
-$("#backIcon").on('click',function (){
+$(".backIcon").on('click',function (){
     $("#homeContainer").css('display','block');
     $("#aboutUsContainer").css('display','block');
     $("#servicesContainer").css('display','block');
@@ -36,6 +39,7 @@ $("#backIcon").on('click',function (){
     $("#contactContainer").css('display','block');
 
     $("#customerLoginPage").css('display','none');
+    $("#adminLoginPage").css('display','none');
 });
 /*when click back icon in Customer Register page*/
 $("#RegistrationBackIcon").on('click',function (){
@@ -72,7 +76,19 @@ $("#backToLogin").on('click',function (){
     $("#customerRegisterPage").css('display','none');
    /* $("#customerRegisterPage").css('height' ,'90vh');*/
 });
+/*when click Admin button in HomePage*/
+$("#button1").on('click',function (){
+   /* alert("You clicked");*/
+    $("#homeContainer").css('display','none');
+    $("#aboutUsContainer").css('display','none');
+    $("#servicesContainer").css('display','none');
+    $("#fleetContainer").css('display','none');
+    $("#contactContainer").css('display','none');
 
+    $("#customerLoginPage").css('display','none');
+    $("#customerRegisterPage").css('display','none');
+    $("#adminLoginPage").css('display','block');
+});
 
 //other
 $("#customerLoginDetailsConatiner1").css('display','none');
