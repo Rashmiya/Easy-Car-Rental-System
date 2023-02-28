@@ -1,0 +1,14 @@
+body{
+    height: 95vh;
+    background: rgb(252,243,234);
+    background: linear-gradient(180deg, rgba(252,243,234,1) 20%, rgba(252,243,234,1) 36%, rgba(250,240,229,1) 46%, rgba(231,233,238,1) 80%, rgba(229,230,236,1) 88%, rgba(229,230,236,1) 100%);
+}
+
+#customerRegisterPage{
+    border: 2px solid #8E8E8E;
+    box-shadow: 4px 4px 3px 0px #8e8e8e;
+    width: 500px;
+    height: 90vh;
+    margin-top: 30px;
+
+}
