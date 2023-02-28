@@ -1,0 +1,71 @@
+
+body{
+    height: 95vh;
+    background: rgb(252,243,234);
+    background: linear-gradient(180deg, rgba(252,243,234,1) 20%, rgba(252,243,234,1) 36%, rgba(250,240,229,1) 46%, rgba(231,233,238,1) 80%, rgba(229,230,236,1) 88%, rgba(229,230,236,1) 100%);
+}
+
+#customerLoginPage{
+    border: 2px solid #8E8E8E;
+    box-shadow: 4px 4px 3px 0px #8e8e8e;
+    width: 500px;
+    height: 90vh;
+    margin-top: 30px;
+
+}
+.customerPanel{
+   /* border: 1px solid black;*/
+    margin-top: 30px;
+}
+.loginForm{
+    margin-top: 40px;
+   /* border: 1px solid green;*/
+    /*width: 800px;*/
+    margin-left: 30px;
+}
+.customerTopic1{
+    text-align: center;
+    font-size: 30px;
+}
+.customerTopic2{
+    text-align: center;
+    font-size: 20px;
+}
+#customerLoginWarningMsg {
+    position: relative;
+    left: 7%;
+    top: 10%;
+    font-size: 15px;
+    font-weight: bold;
+    color: red;
+ /*   border: 1px solid red;*/
+    margin-top: 20px;
+    height: 20px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+.loginForm .form-control{
+    width: 400px;
+}
+.loginForm>div:nth-child(1){
+    margin-top: 25px;
+}
+.customerLoginBtn{
+    margin-left: 120px;
+    margin-top: 20px;
+    width: 150px;
+}
+.forgetpassword{
+   /* border: 1px solid red;*/
+    width:400px;
+    margin-top: 25px;
+}
+.backIcon{
+    position: absolute;
+}
+.backIcon:hover{
+    cursor: pointer;
+}

@@ -250,7 +250,7 @@ body{
     height: 190vh;
     background: rgb(252,243,234);
 /*    background: linear-gradient(180deg, rgba(252,243,234,1) 8%, rgba(252,243,234,1) 20%, rgba(250,240,229,1) 30%, rgba(231,233,238,1) 54%, rgba(229,230,236,1) 78%, rgba(229,230,236,1) 100%);*/
-    background: linear-gradient(180deg, rgba(229,230,236,1) 10%,  rgba(229,230,236,1) 15%,   rgba(231,233,238,1) 40%, rgb(231,233,238,1) 54%, rgba(252,243,234,1) 78%, rgba(252,243,234,1) 100%);
+    background: linear-gradient(180deg, rgba(229,230,236,1) 10%,  rgba(229,230,236,1) 15%,   rgba(231,233,238,1) 40%, rgb(231,233,238,1) 50%, rgba(252,243,234,1) 78%, rgba(252,243,234,1) 100%);
 }
 #fleetContainer .para1{
     position: absolute;
