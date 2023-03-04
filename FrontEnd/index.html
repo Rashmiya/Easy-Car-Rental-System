@@ -22,6 +22,9 @@
     <link rel="stylesheet" href="assets/styles/dashboard.css">
     <link rel="stylesheet" href="assets/styles/customerLogin.css">
     <link rel="stylesheet" href="assets/styles/customerRegistration.css">
+    <link rel="stylesheet" href="assets/styles/registeredCustomerHomePage.css">
+    <link rel="stylesheet" href="assets/styles/customerPage.css">
+    <link rel="stylesheet" href="assets/styles/adminDashboard.css">
 
     <!--font styles-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -441,10 +444,13 @@
 </main>
 <!--customer login page container-->
 <main class="container-fluid" id="customerLoginPage">
+    <img src="assets/images/cars/car1.png" alt="background black car image">
+
             <div class="customerPanel">
                 <div class="backIcon" class="backIcon">
                     <img src="assets/images/icons/back.png" alt="back Icon">
                 </div>
+                <img src="assets/images/icons/customerPink.png" class="customerPink" alt="Customer Icon">
                 <p class="customerTopic1">Customer Panel </p>
                 <!--<div class="bottom"></div>-->
                 <p class="customerTopic2">Please Login or Sign in to continue</p>
@@ -488,6 +494,7 @@
         <div class="backIcon" id="RegistrationBackIcon">
             <img src="assets/images/icons/back.png" alt="back Icon">
         </div>
+        <img src="assets/images/icons/customerPink.png" class="customerPink" alt="Customer Icon">
         <p class="customerTopic1">Customer Panel </p>
         <!--<div class="bottom"></div>-->
         <p class="customerTopic2">Sign Up to create New Account</p>
@@ -505,32 +512,27 @@
             </div>
             <div class="col-md-12" style="margin-top: 20px; margin-left: 50px">
                 <label class="form-label" for="inputCustomerEmail">Email</label>
-                <input class="form-control" name="email" id="inputCustomerEmail" placeholder="Email" type="email">
+                <input class="form-control" name="email" id="inputCustomerEmail" placeholder="Email Address" type="email">
             </div>
             <div class="col-12" style="margin-top: 20px; margin-left: 50px">
                 <label class="form-label" for="inputCustomerAddress">Address</label>
-                <input class="form-control" name="address" id="inputCustomerAddress" placeholder="1234 Main St" type="text">
+                <input class="form-control" name="address" id="inputCustomerAddress" placeholder="150 A, 2 Meepe Junction, Padukka" type="text">
             </div>
             <div class="col-12" style="margin-top: 20px; margin-left: 50px">
                 <label class="form-label" for="inputCustomerContact">Contact</label>
-                <input class="form-control" name="contact" id="inputCustomerContact" placeholder="Contact" type="text">
+                <input class="form-control" name="contact" id="inputCustomerContact" placeholder="Contact Number" type="text">
             </div>
             <div class="col-12" style="margin-top: 20px; margin-left: 50px">
-                <label class="form-label" for="inputCustomerDrivingLicenseNo">Driving License No</label>
-                <input class="form-control" name="Driving_License_No" id="inputCustomerDrivingLicenseNo" placeholder="Driving License No" type="text">
+                <label class="form-label" for="inputCustomerDrivingLicenseNo">Driving License Number</label>
+                <input class="form-control" name="Driving_License_No" id="inputCustomerDrivingLicenseNo" placeholder="Enter Driving License No" type="text">
             </div>
             <div class="col-12" style="margin-top: 20px; margin-left: 50px">
-                <label class="form-label" for="inputCustomerNic">NIC No</label>
-                <input class="form-control" name="nic" id="inputCustomerNic" placeholder="NIC No" type="text">
-            </div>
-
-            <div class="mb-3" style="margin-top: 20px; margin-left: 50px">
-                <label class="form-label" for="formFile">NIC Photo</label>
-                <input class="form-control" name="username" id="formFile" type="file">
+                <label class="form-label" for="inputCustomerNICNo">NIC Number</label>
+                <input class="form-control" name="NIC_No" id="inputCustomerNICNo" placeholder="Enter NIC No" type="text">
             </div>
             <div class="mb-3" style="margin-top: 20px; margin-left: 50px">
-                <label class="form-label" for="formFile">Driving License Photo</label>
-                <input class="form-control" name="username"  type="file">
+                <label class="form-label" for="Driving/NIC file">Driving License/NIC Photo</label>
+                <input class="form-control" name="username" id="Driving/NIC file" type="file">
             </div>
             <p id="customerRegisterWarningMsg" style="/*border: 1px solid red; width: 350px;height: 30px;margin-left: 50px;margin-top: 0px;*/"></p>
             <div class="col-12" style="margin-top: 20px; margin-left: 50px">
@@ -546,8 +548,8 @@
         <div class="backIcon" class="backIcon">
             <img src="assets/images/icons/back.png" alt="back Icon">
         </div>
+        <img src="assets/images/icons/admin.png" class="adminPink" alt="Customer Icon">
         <p class="customerTopic1">Admin Panel </p>
-        <!--<div class="bottom"></div>-->
         <p class="customerTopic2">Please Login or Sign in to continue</p>
     </div>
 
@@ -576,6 +578,126 @@
         </form>
     </div>
 </main>
+<!--Registered Customer Home Page-->
+<main class="container-fluid" id="registeredCustomerHomePage">
+
+</main>
+<!--Admin Dashboard Page-->
+<main class="container-fluid" id="adminDashboardPage">
+    <section id="adminNavArea"><!--class="fixed-top"-->
+        <nav class="navbar fixed-top">
+            <div class="container-fluid">
+                <a class="logo navbar-brand" href="#">
+                    <img src="assets/images/EasyCarLogo.png" alt="Car Rental System Logo" class="d-inline-block align-text-top">
+                    Easy Car Rental
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--right side toggle panel-->
+                <div class="offcanvas offcanvas-end text-bg-light" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Admin Panel</h5>
+                        <button type="button" class="btn-close closebutton" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#dashboardView" id="dashboard">Dashboard</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#rentalRequestView" id="rentalRequest">Rental Request</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#incomeReportView" id="incomeReport">Income Report</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#manageCarsView" id="manageCars">Manage Cars</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#manageCustomersView" id="manageCustomers">Customers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#driversView" id="manageDrivers">Drivers</a>
+                            </li>
+
+                        </ul>
+                        <!--admin logout button-->
+                        <button type="button" class="nav-buttons" class="logoutButton" href="#">Log Out</button>
+                    </div>
+                </div>
+                <!--END - right side toggle panel-->
+            </div>
+        </nav>
+        <!--END-Navigation TOP-->
+
+        <!---->
+        <div id="dashboardView">
+            <div class="d-flex justify-content-around">
+                <div class="customers label-panel">
+                    <img src="assets/images/icons/customer.png" alt="Registered Customers">
+                    <p class="count customerCount">100</p>
+                    <p>Registered Users</p>
+                </div>
+
+                <div class="availableCars label-panel">
+                    <img src="assets/images/icons/car.png" alt="Available Cars">
+                    <p class="count AvailableCarCount">300</p>
+                    <p>Available Cars</p>
+                </div>
+
+                <div class="rentedCars label-panel" >
+                    <img src="assets/images/icons/car.png" alt="Rented Cars">
+                    <p class="count rentedCarCount">20</p>
+                    <p>Rented Cars</p>
+
+                </div>
+            </div>
+            <div class="d-flex justify-content-around">
+                <div class="availableDrivers label-panel" >
+                    <img src="assets/images/icons/customer.png" alt="Available Drivers">
+                    <p class="count driverCount">11</p>
+                    <p>Available Drivers</p>
+                </div>
+
+                <div class="underMaintenanceCar label-panel">
+                    <img src="assets/images/icons/car.png" alt="Under Maintenance Cars">
+                    <p class="count maintainsCount">5</p>
+                    <p>Under Maintenance Cars</p>
+                </div>
+
+                <div class="totalRental label-panel">
+                    <img src="assets/images/icons/bookingSuccess.png" alt="Total Rentals/Day">
+                    <p class="count rentalsCount">6</p>
+                    <p>Total Rentals/Day</p>
+                </div>
+            </div>
+        </div>
+        <!---->
+       <!-- <div id="rentalRequestView">
+            <p>Rental</p>
+        </div>
+        &lt;!&ndash;&ndash;&gt;
+        <div id="incomeReportView">
+            <p>Income</p>
+        </div>
+        &lt;!&ndash;&ndash;&gt;
+        <div id="manageCarsView">
+            <p>manageCars</p>
+        </div>
+        &lt;!&ndash;&ndash;&gt;
+        <div id="manageCustomersView">
+            <p>manageCustomers</p>
+        </div>
+        &lt;!&ndash;&ndash;&gt;
+        <div id="driversView">
+            <p>manage Drivers</p>
+        </div>-->
+    </section>
+</main>
+
+
+
 <script src="assets/bootstrap/js/bootstrap.min.js"></script> <!--import bootstrap for js-->
 <script src="assets/jQuery/jquery-3.6.0.min.js"></script> <!--import jQuery library-->
 

@@ -1,13 +1,15 @@
 /*In initial level*/
-$("#homeContainer").css('display','block');
-$("#aboutUsContainer").css('display','block');
-$("#servicesContainer").css('display','block');
-$("#fleetContainer").css('display','block');
-$("#contactContainer").css('display','block');
+$("#homeContainer").css('display','none');
+$("#aboutUsContainer").css('display','none');
+$("#servicesContainer").css('display','none');
+$("#fleetContainer").css('display','none');
+$("#contactContainer").css('display','none');
 
 $("#customerLoginPage").css('display','none');
-$("#adminLoginPage").css('display','none');
 $("#customerRegisterPage").css('display','none');
+$("#adminLoginPage").css('display','none');
+$("#registeredCustomerHomePage").css('display','none');
+$("#adminDashboardPage").css('display','block');
 
 // demo
 /*$("#homeContainer").css('display','none');
@@ -18,7 +20,8 @@ $("#contactContainer").css('display','none');
 //own
 $("#customerLoginPage").css('display','none');
 $("#customerRegisterPage").css('display','none');
-$("#adminLoginPage").css('display','block');*/
+$("#adminLoginPage").css('display','none');
+$("#demoPage").css('display','block');*/
 
 /*when click login button in HomePage*/
 $("#button2").on('click',function (){

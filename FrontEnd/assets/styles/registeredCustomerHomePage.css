@@ -1,0 +1,5 @@
+#registeredCustomerHomePage{
+    height: 160vh;
+    background: rgb(252,243,234);
+    background: linear-gradient(180deg, rgba(252,243,234,1) 20%, rgba(252,243,234,1) 36%, rgba(250,240,229,1) 46%, rgba(231,233,238,1) 80%, rgba(229,230,236,1) 88%, rgba(229,230,236,1) 100%);
+}

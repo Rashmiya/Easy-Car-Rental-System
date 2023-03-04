@@ -1,0 +1,134 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    height: 84vh;
+}
+.navbar{
+    border: 2px solid #ad6969;
+    height: 70px;
+    background-color: transparent;
+    box-shadow: 6px 6px 12px 4px #ad6969;;
+    z-index: 2;
+}
+#adminNavArea .navbar-brand{
+    font-family: 'Lemonada', cursive;
+     /* border:1px solid red;*/
+    color: #ad6969;
+}
+#adminNavArea .navbar-brand:hover{
+    color: #E8432B;
+}
+#adminNavArea .navbar-brand>img {
+    width: 100px;
+    height: 80px;
+    margin-left: 22px;
+    margin-top: -10px;
+    /*  border: 1px solid green;*/
+}
+.navbar .container-fluid{
+    /*border:1px solid green;*/
+}
+#adminDashboardPage .navbar-toggler{
+    border: 3px solid #878484;
+    margin-top: -30px;
+}
+.closebutton{
+    border: 2px solid red;
+}
+.offcanvas-header{
+    font-family: 'Lemonada', cursive;
+}
+.nav-item{
+    border: 1px solid darkgray;
+}
+#adminNav .navbar-nav .nav-item .nav-link{
+    color: #ad6969;
+    font-size: 16px;
+    font-family: 'Lemonada', cursive;
+    border: 1px solid red;
+}
+#adminNav .navbar-nav .nav-item .nav-link:hover{
+    color: #bda92d;
+}
+#adminNav .navbar-nav .nav-item #dashboard{
+    margin-left: 60px;
+    margin-top: -30px;
+}
+#adminNav .navbar-nav .nav-item #rentalRequest{
+    margin-top: -30px;
+    margin-left: 20px;
+}
+#adminNav .navbar-nav .nav-item #incomeReport{
+    margin-top: -30px;
+    margin-left: 32px;
+}
+#adminNav .navbar-nav .nav-item #manageCars{
+    margin-top: -30px;
+    margin-left: 32px;
+}
+#adminNav .navbar-nav .nav-item #manageCustomers{
+    margin-top: -30px;
+    margin-left: 45px;
+}
+#adminNav .navbar-nav .nav-item #manageDrivers{
+    margin-top: -30px;
+    margin-left: 50px;
+}
+
+#adminNavArea .nav-buttons{
+    font-family: 'Lemonada', cursive;
+    color: #ad6969;
+    background-color: transparent;
+    border: 3px solid #bda92d;
+    margin-top:-30px;
+    font-size: 16px;
+    width: 110px;
+}
+#adminNavArea .nav-buttons:hover{
+    color: #bda92d;
+}
+#adminNavArea .logoutButton{
+    margin-right: 10px;
+}
+
+/*===============================*/
+#dashboardView{
+    width: 1180px;
+    height: 500px;
+    margin-left: 70px;
+    margin-top: 100px;
+  /*  border: 1px solid #000000;*/
+    z-index: -5;
+}
+.label-panel{
+    border: 3px solid #ad6969;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 3px 2px 5px 2px #ad6969;
+    height: 210px;
+    margin-top: 40px;
+    width: 320px;
+}
+.label-panel:hover{
+    background-color: #eed0c1;
+}
+.label-panel>img{
+   /* border: 1px solid red;*/
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+    margin-top: 30px;
+    opacity: 0.4;
+}
+.label-panel p:nth-child(2){
+    /*border: 1px solid blue;*/
+    position: absolute;
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 200px;
+    margin-top: -70px;
+}
+.label-panel p:nth-child(3){
+    /*border: 1px solid black;*/
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+}
