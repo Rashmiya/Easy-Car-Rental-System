@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Car Rental System | Chase Your Dream Location, with The Car You Want !</title>
@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="assets/styles/registeredCustomerHomePage.css">
     <link rel="stylesheet" href="assets/styles/customerPage.css">
     <link rel="stylesheet" href="assets/styles/adminDashboard.css">
+    <link rel="stylesheet" href="assets/styles/manageCustomersView.css">
 
     <!--font styles-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,7 +35,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@600&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body id="body">
 
 <!--home page container-->
 <main class="container-fluid" id="homeContainer">
@@ -573,7 +574,7 @@
 <!--                <input type="checkbox" name="rememberusername" id="rememberAdminUsername" value="1">-->
 <!--                <label for="rememberusername">Remember username</label>-->
 <!--            </div>-->
-            <button class="btn customerLoginBtn btn-primary" type="button">Login</button>
+            <button class="btn adminLoginbtn btn-primary" type="button">Login</button>
             <p id="adminLoginWarningMsg"> <!--style="border: 1px solid red; width: 50px;height: 30px"--></p>
         </form>
     </div>
@@ -584,123 +585,198 @@
 </main>
 <!--Admin Dashboard Page-->
 <main class="container-fluid" id="adminDashboardPage">
-    <section id="adminNavArea"><!--class="fixed-top"-->
-        <nav class="navbar fixed-top">
-            <div class="container-fluid">
-                <a class="logo navbar-brand" href="#">
-                    <img src="assets/images/EasyCarLogo.png" alt="Car Rental System Logo" class="d-inline-block align-text-top">
-                    Easy Car Rental
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!--right side toggle panel-->
-                <div class="offcanvas offcanvas-end text-bg-light" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Admin Panel</h5>
-                        <button type="button" class="btn-close closebutton" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#dashboardView" id="dashboard">Dashboard</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#rentalRequestView" id="rentalRequest">Rental Request</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#incomeReportView" id="incomeReport">Income Report</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#manageCarsView" id="manageCars">Manage Cars</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#manageCustomersView" id="manageCustomers">Customers</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#driversView" id="manageDrivers">Drivers</a>
-                            </li>
-
-                        </ul>
-                        <!--admin logout button-->
-                        <button type="button" class="nav-buttons" class="logoutButton" href="#">Log Out</button>
-                    </div>
-                </div>
-                <!--END - right side toggle panel-->
+    <div id="dashboardView">
+        <div class="d-flex justify-content-around">
+            <div class="customers label-panel">
+                <img src="assets/images/icons/customer.png" alt="Registered Customers">
+                <p class="count customerCount">100</p>
+                <p>Registered Users</p>
             </div>
-        </nav>
-        <!--END-Navigation TOP-->
 
-        <!---->
-        <div id="dashboardView">
-            <div class="d-flex justify-content-around">
-                <div class="customers label-panel">
-                    <img src="assets/images/icons/customer.png" alt="Registered Customers">
-                    <p class="count customerCount">100</p>
-                    <p>Registered Users</p>
-                </div>
-
-                <div class="availableCars label-panel">
-                    <img src="assets/images/icons/car.png" alt="Available Cars">
-                    <p class="count AvailableCarCount">300</p>
-                    <p>Available Cars</p>
-                </div>
-
-                <div class="rentedCars label-panel" >
-                    <img src="assets/images/icons/car.png" alt="Rented Cars">
-                    <p class="count rentedCarCount">20</p>
-                    <p>Rented Cars</p>
-
-                </div>
+            <div class="availableCars label-panel">
+                <img src="assets/images/icons/car.png" alt="Available Cars">
+                <p class="count AvailableCarCount">300</p>
+                <p>Available Cars</p>
             </div>
-            <div class="d-flex justify-content-around">
-                <div class="availableDrivers label-panel" >
-                    <img src="assets/images/icons/customer.png" alt="Available Drivers">
-                    <p class="count driverCount">11</p>
-                    <p>Available Drivers</p>
-                </div>
 
-                <div class="underMaintenanceCar label-panel">
-                    <img src="assets/images/icons/car.png" alt="Under Maintenance Cars">
-                    <p class="count maintainsCount">5</p>
-                    <p>Under Maintenance Cars</p>
-                </div>
+            <div class="rentedCars label-panel" >
+                <img src="assets/images/icons/car.png" alt="Rented Cars">
+                <p class="count rentedCarCount">20</p>
+                <p>Rented Cars</p>
 
-                <div class="totalRental label-panel">
-                    <img src="assets/images/icons/bookingSuccess.png" alt="Total Rentals/Day">
-                    <p class="count rentalsCount">6</p>
-                    <p>Total Rentals/Day</p>
-                </div>
             </div>
         </div>
-        <!---->
-       <!-- <div id="rentalRequestView">
-            <p>Rental</p>
+        <div class="d-flex justify-content-around">
+            <div class="availableDrivers label-panel" >
+                <img src="assets/images/icons/customer.png" alt="Available Drivers">
+                <p class="count driverCount">11</p>
+                <p>Available Drivers</p>
+            </div>
+
+            <div class="underMaintenanceCar label-panel">
+                <img src="assets/images/icons/car.png" alt="Under Maintenance Cars">
+                <p class="count maintainsCount">5</p>
+                <p>Under Maintenance Cars</p>
+            </div>
+
+            <div class="totalRental label-panel">
+                <img src="assets/images/icons/bookingSuccess.png" alt="Total Rentals/Day">
+                <p class="count rentalsCount">6</p>
+                <p>Total Rentals/Day</p>
+            </div>
         </div>
-        &lt;!&ndash;&ndash;&gt;
-        <div id="incomeReportView">
-            <p>Income</p>
+    </div>
+</main>
+<!--admin Tp bar area-->
+<main class="container-fluid" id="adminTopBar">
+    <section id="adminNavArea">
+    <nav class="navbar fixed-top">
+        <div class="container-fluid">
+            <a class="Adminlogo navbar-brand" href="#">
+                <img src="assets/images/EasyCarLogo.png" alt="Car Rental System Logo" class="d-inline-block align-text-top">
+                Easy Car Rental
+            </a>
+            <!--label for Text Area-->
+            <label id="panelName" style="/*border: 1px solid red;*/ font-size: 20px; color: burlywood; margin-top: -30px;"></label>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--right side toggle panel-->
+            <div class="offcanvas offcanvas-end text-bg-light" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Admin Panel</h5>
+                    <button type="button" class="btn-close closebutton" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#dashboardView" id="dashboard">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#rentalRequestView" id="rentalRequest">Rental Request</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#incomeReportView" id="incomeReport">Income Report</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#manageCarsView" id="manageCars">Manage Cars</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#manageCustomersView" id="manageCustomers">Customers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#driversView" id="manageDrivers">Drivers</a>
+                        </li>
+
+                    </ul>
+                    <!--admin logout button-->
+                    <button type="button" class="nav-buttons" id="logoutButton" href="#">Log Out</button>
+                </div>
+            </div>
+            <!--END - right side toggle panel-->
         </div>
-        &lt;!&ndash;&ndash;&gt;
-        <div id="manageCarsView">
-            <p>manageCars</p>
-        </div>
-        &lt;!&ndash;&ndash;&gt;
-        <div id="manageCustomersView">
-            <p>manageCustomers</p>
-        </div>
-        &lt;!&ndash;&ndash;&gt;
-        <div id="driversView">
-            <p>manage Drivers</p>
-        </div>-->
+    </nav>
+    <!--END-Navigation TOP-->
     </section>
+</main>
+<!--Admin Customer Management page-->
+<main class="container-fluid" id="adminCustomerPage">
+    <div id="manageCustomersView" class="d-flex">
+        <!--  <p class="fw-bold" style="font-size: 18px;">Manage Customers</p>-->
+        <div class="updateCustomer">
+            <form class="updateForm row g-3">
+                <div class="col-md-6">
+                    <label class="form-label" for="inputCustomerUsername">Username
+                        <input class="form-control" name="username" id="manageUserName" placeholder="Username" type="text">
+                    </label>
+                </div>
+                <div class="col-md-6" style="margin-top: 20px;">
+                    <label class="form-label" for="inputCustomerPassword">Password
+                        <input class="form-control" name="password" id="managePassword" placeholder="Password" type="password">
+                    </label>
+                </div>
+                <div class="col-md-12" style="margin-top: 20px; margin-left: 50px">
+                    <label class="form-label" for="inputCustomerEmail">Email
+                        <input class="form-control" name="email" id="manageEmail" placeholder="Email Address" type="email">
+                    </label>
+                </div>
+                <div class="col-12" style="margin-top: 20px; margin-left: 50px">
+                    <label class="form-label" for="inputCustomerAddress">Address
+                        <input class="form-control" name="address" id="manageAddress" placeholder="150 A, 2 Meepe Junction, Padukka" type="text">
+                    </label>
+                </div>
+                <div class="col-12" style="margin-top: 20px; margin-left: 50px">
+                    <label class="form-label" for="inputCustomerContact">Contact
+                        <input class="form-control" name="contact" id="manageContact" placeholder="Contact Number" type="text">
+                    </label>
+                </div>
+                <div class="col-12" style="margin-top: 20px; margin-left: 50px">
+                    <label class="form-label" for="inputCustomerDrivingLicenseNo">Driving License Number
+                        <input class="form-control" name="Driving_License_No" id="manageDrivingLicense" placeholder="Enter Driving License No" type="text">
+                    </label>
+                </div>
+                <div class="col-12" style="margin-top: 20px; margin-left: 50px">
+                    <label class="form-label" for="inputCustomerNICNo">NIC Number
+                        <input class="form-control" name="NIC_No" id="manageNIC" placeholder="Enter NIC No" type="text">
+                    </label>
+                </div>
+                <div class="mb-3" style="margin-top: 20px; margin-left: 50px">
+                    <label class="form-label" for="Driving/NIC file">Driving License/NIC Photo
+                        <input class="form-control" name="username" id="manageDriving/NICfile" type="file">
+                    </label>
+                </div>
+                <p id="customerUpdateWarningMsg" style="/*border: 1px solid red; width: 350px;height: 30px;margin-left: 50px;margin-top: 0px;*/"></p>
+            </form>
+            <!--buttons for update and delete-->
+            <button type="button" class="btn btn-warning" style="width: 130px; margin-left: 20px;">Update </button>
+            <button type="button" class="btn btn-danger"style="width: 130px;  margin-left: 20px;">Delete</button>
+        </div>
+        <div class="customerTable-area overflow-auto">
+            <table class="table table-hover customer-table">
+                <thead>
+                <tr>
+                    <th scope="col">username</th>
+                    <th scope="col">password</th>
+                    <th scope="col">email</th>
+                    <th scope="col">address</th>
+                    <th scope="col">contact</th>
+                    <th scope="col">D/L number</th>
+                    <th scope="col">NIC number</th>
+                    <th scope="col">driving/NIC images</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <!-- <th scope="row">1</th>
+                     <td>Mark</td>
+                     <td>Otto</td>
+                     <td>@mdo</td>-->
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </main>
 
 
 
+<!--<div id="driversView">
+           <p>manage Drivers</p>
+       </div>
+ <div id="manageCarsView">
+            <p>manageCars</p>
+        </div>
+<div id="incomeReportView">
+           <p>Income</p>
+       </div>
+ <div id="rentalRequestView">
+           <p>Rental</p>
+       </div>-->
 <script src="assets/bootstrap/js/bootstrap.min.js"></script> <!--import bootstrap for js-->
 <script src="assets/jQuery/jquery-3.6.0.min.js"></script> <!--import jQuery library-->
 
 <script src="controller/mainDashboard.js"></script>
+
+<script src="controller/customer.js"></script>
 </body>
 </html>

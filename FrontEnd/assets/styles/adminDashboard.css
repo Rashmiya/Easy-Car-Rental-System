@@ -2,22 +2,22 @@ body{
     font-family: 'Poppins', sans-serif;
     height: 84vh;
 }
-.navbar{
+#adminTopBar .navbar{
     border: 2px solid #ad6969;
     height: 70px;
     background-color: transparent;
-    box-shadow: 6px 6px 12px 4px #ad6969;;
+    box-shadow: 6px 6px 12px 4px #ad6969;
     z-index: 2;
 }
-#adminNavArea .navbar-brand{
+#adminTopBar #adminNavArea .navbar-brand{
     font-family: 'Lemonada', cursive;
      /* border:1px solid red;*/
     color: #ad6969;
 }
-#adminNavArea .navbar-brand:hover{
+#adminTopBar #adminNavArea .navbar-brand:hover{
     color: #E8432B;
 }
-#adminNavArea .navbar-brand>img {
+#adminTopBar #adminNavArea .navbar-brand>img {
     width: 100px;
     height: 80px;
     margin-left: 22px;
@@ -27,10 +27,11 @@ body{
 .navbar .container-fluid{
     /*border:1px solid green;*/
 }
-#adminDashboardPage .navbar-toggler{
+#adminTopBar .navbar-toggler{
     border: 3px solid #878484;
     margin-top: -30px;
 }
+/*==============admin top bar toggler btn=========*/
 .closebutton{
     border: 2px solid red;
 }
@@ -74,7 +75,7 @@ body{
     margin-left: 50px;
 }
 
-#adminNavArea .nav-buttons{
+#adminNavArea #logoutButton{
     font-family: 'Lemonada', cursive;
     color: #ad6969;
     background-color: transparent;
@@ -83,10 +84,10 @@ body{
     font-size: 16px;
     width: 110px;
 }
-#adminNavArea .nav-buttons:hover{
+#adminNavArea #logoutButton:hover{
     color: #bda92d;
 }
-#adminNavArea .logoutButton{
+#adminNavArea #logoutButton{
     margin-right: 10px;
 }
 

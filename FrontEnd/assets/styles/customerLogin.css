@@ -103,3 +103,8 @@ body{
     height: 100px;
     top: 40px;
 }
+.adminLoginbtn{
+    margin-left: 120px;
+    margin-top: 20px;
+    width: 150px;
+}
