@@ -52,10 +52,10 @@ public class JPAConfig {
     @Bean
     public DataSource dataSource() throws NamingException {
         DriverManagerDataSource datasource = new DriverManagerDataSource();
-        datasource.setUrl(env.getRequiredProperty("my.applicaion.url"));
-        datasource.setUsername(env.getRequiredProperty("my.applicaion.username"));
-        datasource.setPassword(env.getRequiredProperty("my.applicaion.password"));
-        datasource.setDriverClassName(env.getRequiredProperty("my.applicaion.driverClassname"));
+        datasource.setUrl(env.getRequiredProperty("my.app.url"));
+        datasource.setUsername(env.getRequiredProperty("my.application.username"));
+        datasource.setPassword(env.getRequiredProperty("my.application.password"));
+        datasource.setDriverClassName(env.getRequiredProperty("my.application.driverClassname"));
         return datasource;
     }
 
@@ -68,7 +68,7 @@ public class JPAConfig {
     @Bean
     public JpaVendorAdapter jpaVendorAdapter(){
         HibernateJpaVendorAdapter vendorAdapter=new HibernateJpaVendorAdapter();
-        vendorAdapter.setDatabasePlatform(env.getRequiredProperty("my.applicaion.dialect"));
+        vendorAdapter.setDatabasePlatform(env.getRequiredProperty("my.application.dialect"));
         vendorAdapter.setDatabase(Database.MYSQL);
         vendorAdapter.setShowSql(true);
         vendorAdapter.setGenerateDdl(true);
