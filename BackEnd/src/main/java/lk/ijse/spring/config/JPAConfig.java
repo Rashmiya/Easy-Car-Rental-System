@@ -52,10 +52,10 @@ public class JPAConfig {
     @Bean
     public DataSource dataSource() throws NamingException {
         DriverManagerDataSource datasource = new DriverManagerDataSource();
-        datasource.setUrl(env.getRequiredProperty("my.app.url"));
-        datasource.setUsername(env.getRequiredProperty("my.app.username"));
-        datasource.setPassword(env.getRequiredProperty("my.app.password"));
-        datasource.setDriverClassName(env.getRequiredProperty("my.app.driverClassname"));
+        datasource.setUrl(env.getRequiredProperty("my.applicaion.url"));
+        datasource.setUsername(env.getRequiredProperty("my.applicaion.username"));
+        datasource.setPassword(env.getRequiredProperty("my.applicaion.password"));
+        datasource.setDriverClassName(env.getRequiredProperty("my.applicaion.driverClassname"));
         return datasource;
     }
 
@@ -67,12 +67,12 @@ public class JPAConfig {
     * --- set show sql*/
     @Bean
     public JpaVendorAdapter jpaVendorAdapter(){
-        HibernateJpaVendorAdapter vendor=new HibernateJpaVendorAdapter();
-        vendor.setDatabasePlatform(env.getRequiredProperty("my.app.dialect"));
-        vendor.setDatabase(Database.MYSQL);
-        vendor.setShowSql(true);
-        vendor.setGenerateDdl(true);
-        return vendor;
+        HibernateJpaVendorAdapter vendorAdapter=new HibernateJpaVendorAdapter();
+        vendorAdapter.setDatabasePlatform(env.getRequiredProperty("my.applicaion.dialect"));
+        vendorAdapter.setDatabase(Database.MYSQL);
+        vendorAdapter.setShowSql(true);
+        vendorAdapter.setGenerateDdl(true);
+        return vendorAdapter;
     }
 
     /*create PlatformTransactionManager return typed @Bean method
