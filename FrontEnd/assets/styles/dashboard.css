@@ -2,7 +2,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 #navigationAreaTop{
-   /* border: 1px solid red;*/
+  /*  border: 1px solid red;*/
     height: 70px;
     /*background-color: #FCF3EA;*/
     z-index: 2;
@@ -31,23 +31,19 @@ body{
 #navbarNav .navbar-nav .nav-item .nav-link:hover{
     color: #E8432B;
 }
-#navbarNav .navbar-nav .nav-item #homeText{
-    margin-left: 285px;
-    margin-top: -30px;
+#navbarNav{
+  /*  border: 1px solid blue;*/
+    padding-bottom: 35px;
 }
-#navbarNav .navbar-nav .nav-item #aboutText{
-    margin-top: -30px;
+#navbarNav .navbar-nav .nav-item #homeText{
+    /*border:1px solid yellow;*/
+    margin-left: 180px;
+    /*margin-top: -30px;*/
+}
+#navbarNav .navbar-nav .nav-item #aboutText,#navbarNav .navbar-nav .nav-item #serviceText,#navbarNav .navbar-nav .nav-item #fleetText,#navbarNav .navbar-nav .nav-item #contactText{
+   /* margin-top: -30px;*/
     margin-left: 20px;
 }
-#navbarNav .navbar-nav .nav-item #serviceText{
-    margin-top: -30px;
-    margin-left: 32px;
-}
-#navbarNav .navbar-nav .nav-item #fleetText{
-    margin-top: -30px;
-    margin-left: 32px;
-}
-
 #navigationAreaTop .nav-buttons{
     font-family: 'Lemonada', cursive;
     color: white;
@@ -249,8 +245,7 @@ body{
    /* border: 1px solid red;*/
     height: 190vh;
     background: rgb(252,243,234);
-/*    background: linear-gradient(180deg, rgba(252,243,234,1) 8%, rgba(252,243,234,1) 20%, rgba(250,240,229,1) 30%, rgba(231,233,238,1) 54%, rgba(229,230,236,1) 78%, rgba(229,230,236,1) 100%);*/
-    background: linear-gradient(180deg, rgba(229,230,236,1) 10%,  rgba(229,230,236,1) 15%,   rgba(231,233,238,1) 40%, rgb(231,233,238,1) 50%, rgba(252,243,234,1) 78%, rgba(252,243,234,1) 100%);
+    background: linear-gradient(180deg, rgba(229,230,236,1) 10%,  rgba(229,230,236,1) 15%,   rgba(231,233,238,1) 40%, rgb(231,233,238) 50%, rgba(252,243,234,1) 78%, rgba(252,243,234,1) 100%);
 }
 #fleetContainer .para1{
     position: absolute;

@@ -88,7 +88,7 @@ $("#backToLogin").on('click',function (){
     $("#customerRegisterPage").css('display','none');
 
 });
-/*when click Admin button in HomePage*/
+/*when click Sign Up button in HomePage*/
 $("#button1").on('click',function (){
     $("#homeContainer").css('display','none');
     $("#aboutUsContainer").css('display','none');
@@ -97,8 +97,8 @@ $("#button1").on('click',function (){
     $("#contactContainer").css('display','none');
 
     $("#customerLoginPage").css('display','none');
-    $("#customerRegisterPage").css('display','none');
-    $("#adminLoginPage").css('display','block');
+    $("#customerRegisterPage").css('display','block');
+    $("#adminLoginPage").css('display','none');
 
     $("#adminDashboardPage").css('display','none');
     $("#adminTopBar").css('display','none');

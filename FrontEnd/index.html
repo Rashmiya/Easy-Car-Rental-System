@@ -36,40 +36,40 @@
 
 </head>
 <body id="body">
-
 <!--home page container-->
 <main class="container-fluid" id="homeContainer">
-
     <!--head navigation area-->
     <section id="navigationAreaTop"><!--class="fixed-top"-->
         <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
             <div class="container-fluid">
-                <a class="logo navbar-brand" href="#">
+                <a class="logo navbar-brand" href="#homeContainer">
                     <img src="assets/images/EasyCarLogo.png" alt="Car Rental System Logo" class="d-inline-block align-text-top">
                     Easy Car Rental
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#" id="homeText">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#homeContainer" id="homeText">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" id="aboutText">About Us</a>
+                            <a class="nav-link" href="#aboutUsContainer" id="aboutText">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" id="serviceText">Services</a>
+                            <a class="nav-link" href="#servicesContainer" id="serviceText">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" id="fleetText">Fleet</a>
+                            <a class="nav-link" href="#fleetContainer" id="fleetText">Fleet</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contactContainer" id="contactText">Contact Us</a>
                         </li>
                     </ul>
                 </div>
-                <!--admin login button-->
-                 <button type="button" class="nav-buttons" id="button1" href="#">Admin</button>
-                <!--customer login button-->
+
+                <!--customer Sign Up button-->
+                 <button type="button" class="nav-buttons" id="button1" href="#">Sign Up</button>
+                <!--login button for customer,admin,driver-->
                 <button type="button" class="nav-buttons" id="button2" href="#">Log In</button>
             </div>
         </nav>
@@ -448,7 +448,7 @@
     <img src="assets/images/cars/car1.png" alt="background black car image">
 
             <div class="customerPanel">
-                <div class="backIcon" class="backIcon">
+                <div class="backIcon">
                     <img src="assets/images/icons/back.png" alt="back Icon">
                 </div>
                 <img src="assets/images/icons/customerPink.png" class="customerPink" alt="Customer Icon">
@@ -506,36 +506,42 @@
             <div class="col-md-6">
                 <label class="form-label" for="inputCustomerUsername">Username</label>
                 <input class="form-control" name="username" id="inputCustomerUsername" placeholder="Username" type="text">
+                <p><small class="text-danger  pl-1 mt-0 mb-0" id="errorTextUsername"></small></p>
             </div>
             <div class="col-md-6" style="margin-top: 20px;">
                 <label class="form-label" for="inputCustomerPassword">Password</label>
-                <input class="form-control" name="password" id="inputCustomerPassword" placeholder="Password" type="password">
+                <input class="form-control" name="password" id="inputCustomerPassword" placeholder="A-Z,0-9 _" type="password">
+                <p><small class="text-danger  pl-1 mt-0 mb-0" id="errorTextPassword"></small></p>
             </div>
             <div class="col-md-12" style="margin-top: 20px; margin-left: 50px">
                 <label class="form-label" for="inputCustomerEmail">Email</label>
-                <input class="form-control" name="email" id="inputCustomerEmail" placeholder="Email Address" type="email">
+                <input class="form-control" name="email" id="inputCustomerEmail" placeholder="rashmiya99@gmail.com" type="email">
+                <p><small class="text-danger  pl-1 mt-0 mb-0" id="errorTextEmail"></small></p>
             </div>
             <div class="col-12" style="margin-top: 20px; margin-left: 50px">
                 <label class="form-label" for="inputCustomerAddress">Address</label>
                 <input class="form-control" name="address" id="inputCustomerAddress" placeholder="150 A, 2 Meepe Junction, Padukka" type="text">
+                <p><small class="text-danger  pl-1 mt-0 mb-0" id="errorTextAddress"></small></p>
             </div>
             <div class="col-12" style="margin-top: 20px; margin-left: 50px">
                 <label class="form-label" for="inputCustomerContact">Contact</label>
-                <input class="form-control" name="contact" id="inputCustomerContact" placeholder="Contact Number" type="text">
+                <input class="form-control" name="contact" id="inputCustomerContact" placeholder="075-7273884" type="text">
+                <p><small class="text-danger  pl-1 mt-0 mb-0" id="errorTextContact"></small></p>
             </div>
             <div class="col-12" style="margin-top: 20px; margin-left: 50px">
                 <label class="form-label" for="inputCustomerDrivingLicenseNo">Driving License Number</label>
                 <input class="form-control" name="Driving_License_No" id="inputCustomerDrivingLicenseNo" placeholder="Enter Driving License No" type="text">
+                <p><small class="text-danger  pl-1 mt-0 mb-0" id="errorTextDrivingLicense"></small></p>
             </div>
             <div class="col-12" style="margin-top: 20px; margin-left: 50px">
                 <label class="form-label" for="inputCustomerNICNo">NIC Number</label>
                 <input class="form-control" name="NIC_No" id="inputCustomerNICNo" placeholder="Enter NIC No" type="text">
+                <p><small class="text-danger  pl-1 mt-0 mb-0" id="errorTextNIC"></small></p>
             </div>
             <div class="mb-3" style="margin-top: 20px; margin-left: 50px">
-                <label class="form-label" for="Driving/NIC file">Driving License/NIC Photo</label>
-                <input class="form-control" name="username" id="Driving/NIC file" type="file">
+                <label class="form-label" for="DrivingNICfile">Driving License/NIC Photo</label>
+                <input class="form-control" name="username" id="DrivingNICfile" type="file">
             </div>
-            <p id="customerRegisterWarningMsg" style="/*border: 1px solid red; width: 350px;height: 30px;margin-left: 50px;margin-top: 0px;*/"></p>
             <div class="col-12" style="margin-top: 20px; margin-left: 50px">
                 <button class="btn customerSignUpButton btn-primary" type="button">Sign Up</button>
             </div>
@@ -627,7 +633,7 @@
         </div>
     </div>
 </main>
-<!--admin Tp bar area-->
+<!--admin Top bar area-->
 <main class="container-fluid" id="adminTopBar">
     <section id="adminNavArea">
     <nav class="navbar fixed-top">
@@ -721,7 +727,7 @@
                     </label>
                 </div>
                 <div class="mb-3" style="margin-top: 20px; margin-left: 50px">
-                    <label class="form-label" for="Driving/NIC file">Driving License/NIC Photo
+                    <label class="form-label" for="manageDriving/NICfile">Driving License/NIC Photo
                         <input class="form-control" name="username" id="manageDriving/NICfile" type="file">
                     </label>
                 </div>
@@ -777,6 +783,7 @@
 
 <script src="controller/mainDashboard.js"></script>
 
-<script src="controller/customer.js"></script>
+<script src="controller/customerRegistrationFormController.js"></script>
+<!--<script src="controller/customer.js"></script>-->
 </body>
 </html>
