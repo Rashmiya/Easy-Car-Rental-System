@@ -23,7 +23,6 @@
     <link rel="stylesheet" href="assets/styles/customerLogin.css">
     <link rel="stylesheet" href="assets/styles/customerRegistration.css">
     <link rel="stylesheet" href="assets/styles/registeredCustomerHomePage.css">
-    <link rel="stylesheet" href="assets/styles/customerPage.css">
     <link rel="stylesheet" href="assets/styles/adminDashboard.css">
     <link rel="stylesheet" href="assets/styles/manageCustomersView.css">
 
@@ -483,7 +482,7 @@
                 </form>
                 <div class="col-md-5">
                     <div class="forgetpassword mt-3">
-                        <p><a href="#" style="margin-left: 30px">Forgotten your username or password?</a></p>
+                        <p><a href="pages/forgetPasswordPage.html" style="margin-left: 30px">Forgotten your username or password?</a></p>
                     </div>
                 </div>
                 <p><a href="#" id="NewAccount" style="margin-left: 30px">Create a new account</a></p>
@@ -546,6 +545,10 @@
                 <button class="btn customerSignUpButton btn-primary" type="button">Sign Up</button>
             </div>
         </form>
+        <!--for generate customer ID and User ID-->
+        <label class="form-label text-danger visually-hidden" id="generateCustomerId"></label>
+        <label class="form-label text-danger visually-hidden" id="generateUserId"></label>
+
         <p><a href="#" id="backToLogin" style="margin-left: 30px">Have an account ? Login From Here </a></p>
     </div>
 </main>

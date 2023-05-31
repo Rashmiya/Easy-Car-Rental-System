@@ -16,6 +16,7 @@ $('#inputCustomerUsername,#inputCustomerPassword,#inputCustomerEmail,#inputCusto
         event.preventDefault();
     }
 });
+
 /*check each field validation*/
 $("#inputCustomerUsername").keyup(function (event) {
     let username = $("#inputCustomerUsername").val();
@@ -114,3 +115,4 @@ $("#inputCustomerNICNo").keyup(function (event) {
     }
 });
 
+/*when click customer Sign up button , */
