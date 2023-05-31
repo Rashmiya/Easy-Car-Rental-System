@@ -30,7 +30,7 @@ public class JPAConfig {
     @Bean
     public LocalContainerEntityManagerFactoryBean entityManagerFactory(DataSource ds, JpaVendorAdapter jpa) {
         LocalContainerEntityManagerFactoryBean bean = new LocalContainerEntityManagerFactoryBean();
-        bean.setPackagesToScan(env.getRequiredProperty("package.name"));
+        bean.setPackagesToScan(env.getRequiredProperty("entity.package.name"));
         bean.setDataSource(ds);
         bean.setJpaVendorAdapter(jpa);
         return bean;
@@ -49,7 +49,7 @@ public class JPAConfig {
     @Bean
     public JpaVendorAdapter jpaVendorAdapter() {
         HibernateJpaVendorAdapter va = new HibernateJpaVendorAdapter();
-        va.setDatabasePlatform(env.getRequiredProperty("my.app.databasePlatform"));
+        va.setDatabasePlatform(env.getRequiredProperty("my.app.dialect"));
         va.setDatabase(Database.MYSQL);
         va.setShowSql(true);
         va.setGenerateDdl(true);
