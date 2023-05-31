@@ -6,17 +6,20 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.time.LocalDate;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
 @ToString
+@Entity
 public class Customer {
     @Id
     private String customerID;
     private LocalDate registeredDate;
     private String customerName;
+    private String custPassword;
     private String customerEmail;
     private String customerAddress;
     private String customerContact;
