@@ -111,7 +111,7 @@
         </div>
     </div>
     <div class="image-area">
-        <img src="assets/images/carinside.png" >
+        <img src="assets/images/carinside.png"  alt="car inside image">
     </div>
     </div>
     <div class="centralArea">
@@ -444,6 +444,19 @@
 </main>
 <!--customer login page container-->
 <main class="container-fluid" id="customerLoginPage">
+    <!--for select each login areas-->
+    <div id="loginOptions" style="width: 200px;">
+        <a href="#customerLoginPage">
+            <button type="button"> Login as a <strong>Customer</strong></button>
+        </a>
+        <a href="#adminLoginPage">
+            <button type="button"> Login as a <strong>Admin</strong></button>
+        </a>
+        <a href="#">
+            <button type="button"> Login as a <strong>Driver</strong></button>
+        </a>
+    </div>
+
     <img src="assets/images/cars/car1.png" alt="background black car image">
 
             <div class="customerPanel">
@@ -555,7 +568,7 @@
 <!--Admin login page container-->
 <main class="container-fluid" id="adminLoginPage">
     <div class="adminPanel">
-        <div class="backIcon" class="backIcon">
+        <div class="backIcon">
             <img src="assets/images/icons/back.png" alt="back Icon">
         </div>
         <img src="assets/images/icons/admin.png" class="adminPink" alt="Customer Icon">
@@ -738,7 +751,7 @@
             </form>
             <!--buttons for update and delete-->
             <button type="button" class="btn btn-warning" style="width: 130px; margin-left: 20px;">Update </button>
-            <button type="button" class="btn btn-danger"style="width: 130px;  margin-left: 20px;">Delete</button>
+            <button type="button" class="btn btn-danger" style="width: 130px;  margin-left: 20px;">Delete</button>
         </div>
         <div class="customerTable-area overflow-auto">
             <table class="table table-hover customer-table">

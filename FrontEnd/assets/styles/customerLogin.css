@@ -13,6 +13,15 @@ body{
     margin-top: 30px;
 
 }
+#customerLoginPage #loginOptions{
+    position: absolute;
+    left: 75px;
+    top: 165px;
+    border-radius: 20px;
+}
+#customerLoginPage #loginOptions button{
+
+}
 #customerLoginPage>img{
     right: 100px;
     position: absolute;
