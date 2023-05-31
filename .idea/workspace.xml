@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="caa166a3-6d97-4185-87da-fee4072c00dd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/assets/styles/customerLogin.css" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/assets/styles/customerLogin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +36,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -73,7 +72,7 @@
       <updated>1685413655404</updated>
       <workItem from="1685413658442" duration="15625000" />
       <workItem from="1685447150106" duration="3014000" />
-      <workItem from="1685500036189" duration="7536000" />
+      <workItem from="1685500036189" duration="10266000" />
     </task>
     <servers />
   </component>
